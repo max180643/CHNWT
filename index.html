@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CHNWT | Junior Developer</title>
+  <meta name="title" content="CHNWT | Junior Developer">
+  <meta name="description" content="Personal website of Chanwit Settavongsin, Junior Developer">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chnwt.dev/">
+  <meta property="og:title" content="CHNWT | Junior Developer">
+  <meta property="og:description" content="Personal website of Chanwit Settavongsin, Junior Developer">
+  <meta property="og:image" content="https://chnwt.dev/images/cover.jpg">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://chnwt.dev/">
+  <meta property="twitter:title" content="CHNWT | Junior Developer">
+  <meta property="twitter:description" content="Personal website of Chanwit Settavongsin, Junior Developer">
+  <meta property="twitter:image" content="https://chnwt.dev/images/cover.jpg">
+
+  <link rel="icon" href="/images/favicon.svg" />
+
+  <link rel="preconnect" href="https://cv.chnwt.dev/" />
+  <link rel="preconnect" href="https://github.com/max180643/" />
+  <link rel="preconnect" href="https://www.linkedin.com/in/max180643/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+    }
+
+    body {
+      background: #33465e;
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      z-index: 0;
+    }
+
+    #title {
+      font-size: 2rem;
+      text-align: center;
+      color: #fff
+    }
+
+    #bg-video {
+      position: fixed;
+      min-width: 100vw;
+      min-height: 100vh;
+      z-index: -1;
+      filter: blur(20px);
+    }
+
+    #bg-image {
+      position: fixed;
+      min-width: 100vw;
+      min-height: 100vh;
+      z-index: -2;
+    }
+
+    #navigation {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .link {
+      color: #eaeaea;
+      font-size: 1.5rem;
+      padding: 12px 64px;
+      margin: 5px 10px;
+      text-decoration: none;
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      transition: 0.2s ease-out
+    }
+
+    .link:hover,
+    .link:focus {
+      color: #fff;
+      background-color: #ffffff20;
+    }
+
+    @media (min-width: 768px) {
+      #title {
+        font-size: 2.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img 
+    id="bg-image"
+    src="data:image/png;base64,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"
+    alt="gradient background"
+  >
+
+  <video id="bg-video" autoplay loop muted playsinline>
+    <source src="/bg.mp4" type="video/mp4" />
+  </video>
+
+  <main id="main">
+    <h1 id="title">Sometimes silence is a really good answer</h1>
+
+    <nav id="navigation">
+      <a 
+        href="https://cv.chnwt.dev/"
+        title="About me"
+        class="link"
+      >
+        About me
+      </a>
+      <a 
+        href="https://github.com/max180643/"
+        title="GitHub"
+        class="link"
+      >
+        GitHub
+      </a>
+      <a 
+        href="https://www.linkedin.com/in/max180643/"
+        title="Linkedin"
+        class="link"
+      >
+        Linkedin
+      </a>
+    </nav>
+  </main>
+</body>
+</html>
